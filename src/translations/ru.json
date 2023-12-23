@@ -1,0 +1,23 @@
+{
+  "HEADER": {
+    "NAV": {
+      "MARKETS": {
+        "TEXT": "Рынки",
+        "SUB": {
+          "GOODS": "Товары",
+          "INDEXES": "Индексы",
+          "CURRENCIES": "Валюты",
+          "STOCK": "Акции",
+          "CRYPTOCURRENCIES": "Криптовалюты",
+          "METALS": "Металлы"
+        }
+      },
+      "ABOUT_COMPANY": "О Компании",
+      "INSURANCE_FUND": "Страховой фонд",
+      "TERMINAL": "Терминал",
+      "CONTACTS": "Контакты",
+      "LOGIN": "Войти",
+      "REGISTER": "Зарегистрироваться"
+    }
+  }
+}
