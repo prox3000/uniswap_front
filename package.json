@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/undefined/**/*.json\""
+    "i18n:report": "vue-cli-service i18n:report --src \\\"./src/**/*.?(js|vue)\\\" --locales \\\"src/i18n/**/*.json\\\""
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
-    "@intlify/vue-i18n-loader": "^3.0.0",
+    "@intlify/vue-i18n-loader": "^3.3.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
