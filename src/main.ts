@@ -4,6 +4,7 @@ import router from './router';
 import {i18n} from './i18n';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
-import 'bootstrap';
+import 'bootstrap'
+import './assets/sass/common.sass';
 
 createApp(App).use(router).use(i18n).mount('#app');
