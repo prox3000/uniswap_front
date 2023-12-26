@@ -1,10 +1,17 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import {createRouter, createWebHashHistory, RouteRecordRaw} from 'vue-router';
 
-const routes = [
+const routes: RouteRecordRaw[]  = [
   {
     path: '/',
     name: 'main',
-    component: () => import('../components/pages/main/main.page.vue')
+    component: () => import('../components/pages/main/main.page.vue'),
+    children: [
+      {
+        path: 'login',
+        name: 'login',
+        component: () => import('../components/pages/login/login.page.vue')
+      }
+    ]
   },
 ]
 

@@ -1,0 +1,29 @@
+<div class="container py-4">
+    <h1 class="mb-5">Вход в аккаунт</h1>
+    <div class="row">
+        <div class="col-7">
+            <form>
+                <div class="row">
+                    <div class="col-6">
+                        <input class="form-control" type="email"
+                               v-bind:placeholder="$t('LOGIN.FORM.INPUT.EMAIL.PLACEHOLDER')">
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group">
+                            <input class="form-control" type="password"
+                                   v-bind:placeholder="$t('LOGIN.FORM.INPUT.PASSWORD.PLACEHOLDER')">
+                            <button class="btn btn-outline-secondary"><i class="bi bi-eye-slash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <a class="text-body d-block my-5" href="#">Забыли пароль?</a>
+            <button class="btn btn-lg btn-warning">Войти</button>
+        </div>
+        <div class="col-5 pt-5">
+            <p class="mt-5">Нет аккаунта?</p>
+            <a href="#" class="text-body mb-5 d-inline-block">Зарегистрироваться</a>
+            <p><small class="text-secondary">* - обязательное поле</small></p>
+        </div>
+    </div>
+</div>
