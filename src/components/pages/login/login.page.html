@@ -10,9 +10,11 @@
                     </div>
                     <div class="col-6">
                         <div class="input-group">
-                            <input class="form-control" type="password"
+                            <input class="form-control" v-bind:type="isShow ? 'text' : 'password'"
                                    v-bind:placeholder="$t('LOGIN.FORM.INPUT.PASSWORD.PLACEHOLDER')">
-                            <button class="btn btn-outline-secondary"><i class="bi bi-eye-slash"></i></button>
+                            <button type="button" class="btn btn-outline-secondary" @click="isShowPassword">
+                                <i class="bi" v-bind:class="{'bi-eye-slash': !isShow, 'bi-eye': isShow}"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
