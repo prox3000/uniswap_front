@@ -1,3 +1,36 @@
 {
-  "REGISTRATION": {}
+  "REGISTRATION": {
+    "TITLE": "Регистрация аккаунта",
+    "FORM": {
+      "INPUT": {
+        "FIRSTNAME": {
+          "PLACEHOLDER": "Ваше имя *"
+        },
+        "LASTNAME": {
+          "PLACEHOLDER": "Ваша фамилия *"
+        },
+        "EMAIL": {
+          "PLACEHOLDER": "Ваш E-mail *"
+        },
+        "PHONE": {
+          "PLACEHOLDER": "Ваш телефон *"
+        },
+        "PASSWORD": {
+          "PLACEHOLDER": "Введите пароль *"
+        },
+        "CONFIRM_PASSWORD": {
+          "PLACEHOLDER": "Подтвердите пароль *"
+        },
+        "PROMO_CODE": {
+          "PLACEHOLDER": "Введите промокод"
+        }
+      },
+      "BUTTON": {
+        "SUBMIT": "Зарегистрироваться"
+      }
+    },
+    "HAVE_ACCOUNT": "Есть аккаунт?",
+    "LOGIN": "Войти",
+    "OBLIGATORY_FIELD": "обязательное поле"
+  }
 }

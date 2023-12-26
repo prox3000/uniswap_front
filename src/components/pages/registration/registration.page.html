@@ -1,15 +1,15 @@
 <div class="container py-4">
-    <h1 class="mb-5">Регистрация аккаунта</h1>
+    <h1 class="mb-5">{{ $t('REGISTRATION.TITLE') }}</h1>
     <div class="row">
         <div class="col-7">
             <form>
                 <div class="row">
                     <div class="col-6 mb-4">
-                        <input class="form-control" type="email"
+                        <input class="form-control" type="text"
                                v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.FIRSTNAME.PLACEHOLDER')">
                     </div>
                     <div class="col-6 mb-4">
-                        <input class="form-control" type="email"
+                        <input class="form-control" type="text"
                                v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.LASTNAME.PLACEHOLDER')">
                     </div>
                     <div class="col-6 mb-4">
@@ -17,7 +17,7 @@
                                v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.EMAIL.PLACEHOLDER')">
                     </div>
                     <div class="col-6 mb-4">
-                        <input class="form-control" type="email"
+                        <input class="form-control" type="text"
                                v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.PHONE.PLACEHOLDER')">
                     </div>
                     <div class="col-6 mb-4">
@@ -38,12 +38,23 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mb-5">
                         <input class="form-control" type="email"
                                v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.PROMO_CODE.PLACEHOLDER')">
                     </div>
+                    <div class="col-6 mb-4">
+                        <button class="btn btn-lg btn-warning">{{ $t('REGISTRATION.FORM.BUTTON.SUBMIT') }}</button>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <p>Нажимая на кнопку “Регистрация” я соглашаюсь с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой возврата средств</a></p>
+                    </div>
                 </div>
             </form>
+        </div>
+        <div class="col-5 pt-5">
+            <p class="mt-5">{{ $t('REGISTRATION.HAVE_ACCOUNT') }}</p>
+            <router-link to="login" class="text-body mb-5 d-inline-block">{{ $t('REGISTRATION.LOGIN') }}</router-link>
+            <p><small class="text-secondary">* - {{ $t('REGISTRATION.OBLIGATORY_FIELD') }}</small></p>
         </div>
     </div>
 </div>

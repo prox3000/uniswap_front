@@ -1,5 +1,6 @@
 {
   "LOGIN": {
+    "TITLE": "Вход в аккаунт",
     "FORM": {
       "INPUT": {
         "EMAIL": {
