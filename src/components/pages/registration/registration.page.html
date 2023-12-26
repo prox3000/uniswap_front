@@ -1,0 +1,49 @@
+<div class="container py-4">
+    <h1 class="mb-5">Регистрация аккаунта</h1>
+    <div class="row">
+        <div class="col-7">
+            <form>
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <input class="form-control" type="email"
+                               v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.FIRSTNAME.PLACEHOLDER')">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <input class="form-control" type="email"
+                               v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.LASTNAME.PLACEHOLDER')">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <input class="form-control" type="email"
+                               v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.EMAIL.PLACEHOLDER')">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <input class="form-control" type="email"
+                               v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.PHONE.PLACEHOLDER')">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="input-group">
+                            <input class="form-control" v-bind:type="isShow ? 'text' : 'password'"
+                                   v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.PASSWORD.PLACEHOLDER')">
+                            <button type="button" class="btn btn-outline-secondary" @click="isShowPassword">
+                                <i class="bi" v-bind:class="{'bi-eye-slash': !isShow, 'bi-eye': isShow}"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="input-group">
+                            <input class="form-control" v-bind:type="isShowConf ? 'text' : 'password'"
+                                   v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.CONFIRM_PASSWORD.PLACEHOLDER')">
+                            <button type="button" class="btn btn-outline-secondary" @click="isShowPasswordConf">
+                                <i class="bi" v-bind:class="{'bi-eye-slash': !isShowConf, 'bi-eye': isShowConf}"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <input class="form-control" type="email"
+                               v-bind:placeholder="$t('REGISTRATION.FORM.INPUT.PROMO_CODE.PLACEHOLDER')">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
