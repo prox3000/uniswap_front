@@ -17,13 +17,13 @@
                     </div>
                 </div>
             </form>
-            <a class="text-body d-block my-5" href="#">Забыли пароль?</a>
-            <button class="btn btn-lg btn-warning">Войти</button>
+            <a class="text-body d-block my-5" href="#">{{ $t('LOGIN.FORGOT_PASSWORD') }}</a>
+            <button class="btn btn-lg btn-warning">{{ $t('LOGIN.LOGIN') }}</button>
         </div>
         <div class="col-5 pt-5">
-            <p class="mt-5">Нет аккаунта?</p>
-            <a href="#" class="text-body mb-5 d-inline-block">Зарегистрироваться</a>
-            <p><small class="text-secondary">* - обязательное поле</small></p>
+            <p class="mt-5">{{ $t('LOGIN.DONT_ACCOUNT') }}</p>
+            <a href="#" class="text-body mb-5 d-inline-block">{{ $t('LOGIN.REGISTER') }}</a>
+            <p><small class="text-secondary">* - {{ $t('LOGIN.OBLIGATORY_FIELD') }}</small></p>
         </div>
     </div>
 </div>

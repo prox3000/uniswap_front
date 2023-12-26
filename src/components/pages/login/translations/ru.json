@@ -1,0 +1,19 @@
+{
+  "LOGIN": {
+    "FORM": {
+      "INPUT": {
+        "EMAIL": {
+          "PLACEHOLDER": "Ваш E-mail *"
+        },
+        "PASSWORD": {
+          "PLACEHOLDER": "Введите пароль *"
+        }
+      }
+    },
+    "FORGOT_PASSWORD": "Забыли пароль?",
+    "LOGIN": "Войти",
+    "DONT_ACCOUNT": "Нет аккаунта?",
+    "REGISTER": "Зарегистрироваться",
+    "OBLIGATORY_FIELD": "обязательное поле"
+  }
+}
