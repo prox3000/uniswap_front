@@ -7,4 +7,4 @@ import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import 'bootstrap'
 import './assets/sass/common.sass';
 
-createApp(App).use(router).use(i18n).mount('#app');
+createApp(App).use(i18n).use(router).mount('#app');

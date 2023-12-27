@@ -16,16 +16,16 @@
                                 {{ $t('HEADER.NAV.MARKETS.TEXT') }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">{{ $t('HEADER.NAV.MARKETS.SUB.GOODS') }}</a></li>
-                                <li><a class="dropdown-item" href="#">{{ $t('HEADER.NAV.MARKETS.SUB.INDEXES') }}</a>
+                                <li><a class="dropdown-item" :href="`goods`">{{ $t('HEADER.NAV.MARKETS.SUB.GOODS') }}</a></li>
+                                <li><a class="dropdown-item" :href="`indexes`">{{ $t('HEADER.NAV.MARKETS.SUB.INDEXES') }}</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">{{ $t('HEADER.NAV.MARKETS.SUB.CURRENCIES') }}</a>
+                                <li><a class="dropdown-item" :href="`currencies`">{{ $t('HEADER.NAV.MARKETS.SUB.CURRENCIES') }}</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">{{ $t('HEADER.NAV.MARKETS.SUB.STOCK') }}</a></li>
-                                <li><a class="dropdown-item" href="#">{{
+                                <li><a class="dropdown-item" :href="`stock`">{{ $t('HEADER.NAV.MARKETS.SUB.STOCK') }}</a></li>
+                                <li><a class="dropdown-item" :href="`cryptocurrencies`">{{
                                         $t('HEADER.NAV.MARKETS.SUB.CRYPTOCURRENCIES')
                                     }}</a></li>
-                                <li><a class="dropdown-item" href="#">{{ $t('HEADER.NAV.MARKETS.SUB.METALS') }}</a></li>
+                                <li><a class="dropdown-item" :href="`metals`">{{ $t('HEADER.NAV.MARKETS.SUB.METALS') }}</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">

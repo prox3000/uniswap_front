@@ -5,7 +5,7 @@ const dir = './src/components/pages/';
 const name = args[2].split('=')[1];
 const type = args[3].split('=')[1];
 
-console.log(`Create: ./src/components/pages/${type}/${name}.${type}`);
+console.log(`Create: ./src/components/pages/${name}/${name}.${type}`);
 
 const vue = `<template src="./${name}.${type}.html" lang="html"></template>
 

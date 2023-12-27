@@ -13,8 +13,10 @@ function loadLocaleMessages() {
   return messages;
 }
 
+export const defaultLocale = 'ru';
+
 export const i18n = createI18n({
   legacy: false,
-  locale: localStorage.getItem('language') || 'ru',
+  locale: localStorage.getItem('language') || defaultLocale,
   messages: loadLocaleMessages()
 });
