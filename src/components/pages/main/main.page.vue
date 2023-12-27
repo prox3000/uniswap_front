@@ -4,7 +4,10 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: "main-page"
+  name: "main-page",
+  data: () => {
+    return {langs: ['RU', 'EN']}
+  }
 });
 </script>
 
