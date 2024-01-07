@@ -29,18 +29,18 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">{{
+                            <a class="nav-link active" aria-current="page" :href="`about-company`">{{
                                     $t('HEADER.NAV.ABOUT_COMPANY')
                                 }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ $t('HEADER.NAV.INSURANCE_FUND') }}</a>
+                            <a class="nav-link" :href="`insurance-fund`">{{ $t('HEADER.NAV.INSURANCE_FUND') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ $t('HEADER.NAV.TERMINAL') }}</a>
+                            <a class="nav-link" :href="`terminal`">{{ $t('HEADER.NAV.TERMINAL') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">{{ $t('HEADER.NAV.CONTACTS') }}</a>
+                            <a class="nav-link" :href="`contacts`">{{ $t('HEADER.NAV.CONTACTS') }}</a>
                         </li>
                         <li class="nav-item ms-auto">
                             <a class="btn btn-outline-warning" :href="`/${$i18n.locale}/login`"><i class="bi bi-person-fill"></i>
