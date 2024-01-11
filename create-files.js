@@ -1,11 +1,12 @@
 const fs = require('fs');
 const args = process.argv;
-const dir = './src/components/pages/';
 
 const name = args[2].split('=')[1];
 const type = args[3].split('=')[1];
 
-console.log(`Create: ./src/components/pages/${name}/${name}.${type}`);
+const dir = `./src/components/${type}s/`;
+
+console.log(`Create: ${dir}${name}/${name}.${type}`);
 
 const vue = `<template src="./${name}.${type}.html" lang="html"></template>
 
