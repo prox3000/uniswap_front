@@ -1,14 +1,14 @@
 <div class="container py-4">
     <h1 class="mb-5">{{ $t('LOGIN.TITLE') }}</h1>
     <div class="row">
-        <div class="col-7">
+        <div class="col-md-7 col-12">
             <form>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6 col-12 mb-4">
                         <input class="form-control" type="email"
                                v-bind:placeholder="$t('LOGIN.FORM.INPUT.EMAIL.PLACEHOLDER')">
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 col-12 mb-4">
                         <div class="input-group">
                             <input class="form-control" v-bind:type="isShow ? 'text' : 'password'"
                                    v-bind:placeholder="$t('LOGIN.FORM.INPUT.PASSWORD.PLACEHOLDER')">
@@ -19,11 +19,11 @@
                     </div>
                 </div>
             </form>
-            <a class="text-body d-block my-5" href="#">{{ $t('LOGIN.FORGOT_PASSWORD') }}</a>
+            <a class="text-body d-block my-sm-5 mb-sm-0 mb-3" href="#">{{ $t('LOGIN.FORGOT_PASSWORD') }}</a>
             <button class="btn btn-lg btn-warning">{{ $t('LOGIN.LOGIN') }}</button>
         </div>
-        <div class="col-5 pt-5">
-            <p class="mt-5">{{ $t('LOGIN.DONT_ACCOUNT') }}</p>
+        <div class="col-md-5 col-12 pt-sm-5">
+            <p class="mt-sm-5 mt-3">{{ $t('LOGIN.DONT_ACCOUNT') }}</p>
             <router-link to="registration" class="text-body mb-5 d-inline-block">{{ $t('LOGIN.REGISTER') }}</router-link>
             <p><small class="text-secondary">* - {{ $t('LOGIN.OBLIGATORY_FIELD') }}</small></p>
         </div>
