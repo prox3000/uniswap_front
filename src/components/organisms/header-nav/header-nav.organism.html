@@ -56,8 +56,8 @@
 							{{ $i18n.locale.toUpperCase() }}
 						</a>
 						<ul class="dropdown-menu dropdown-menu-end">
-							<li v-for="(lang, i) in langs" :key="`Lang${i}`">
-								<a class="dropdown-item" :href="`/${lang.toLowerCase()}/`">{{ lang }}</a>
+							<li v-for="(lang, i) in langs" :key="`lang${i}`">
+								<a class="dropdown-item" :href="`/${lang.code}/`">{{ lang.name }}</a>
 							</li>
 						</ul>
 					</li>

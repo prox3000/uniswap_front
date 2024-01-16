@@ -5,9 +5,6 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'main-page',
-  data: () => {
-    return {langs: ['RU', 'EN']}
-  }
 });
 </script>
 
